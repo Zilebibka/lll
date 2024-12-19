@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пример страницы</title>
+    <!-- Подключаем скрипт с атрибутом defer -->
+    <script src="12zzz.js" defer></script>
+</head>
+<body>
+    <h1>Заголовок страницы</h1>
+    <div class="content">
+        Контент страницы. Этот блок будет скрыт/показан по клику.
+    </div>
+
+    <script>
+        // Ожидаем полной загрузки страницы
+        document.addEventListener('DOMContentLoaded', function() {
+            // 1. Вызываем showMessage с сообщением "Скрипт загружен!"
+            showMessage("Скрипт загружен!");
+
+            // 2. Вызываем logCurrentTime для вывода времени в консоль
+            logCurrentTime();
+
+            // 3. Вызываем resetBackgroundColor перед изменением фона
+            resetBackgroundColor();
+
+            // 4. Меняем фон на lightblue
+            changeBackgroundColor("red");
+
+            // 5. Переключаем видимость элемента с классом .content
+            toggleVisibility('.content');
+
+            // 6. Обновляем текст H1 из URL-параметра utm_term
+            updateH1FromURL();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задания JavaScript</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Подключаем основные стили для масштабирования и оформления */
+        body {
+            margin: 20px;
+        }
+        .main-content {
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .scroll-to-top {
+            z-index: 1000;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            font-size: 24px;
+            padding: 10px;
+            border-radius: 50%;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            display: none;
+        }
+        .scroll-to-top:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="text-center my-4">Задания по JavaScript</h1>
+
+    <!-- Задание 1 -->
+    <div class="main-content">
+        <h3>Задание 1: Объявление переменных и условные операторы</h3>
+        <button class="btn btn-primary" onclick="runTask1()">Запуск Задания 1</button>
+    </div>
+
+    <!-- Задание 2 -->
+    <div class="main-content">
+        <h3>Задание 2: Циклы</h3>
+        <button class="btn btn-info" onclick="runTask2()">Запуск Задания 2</button>
+    </div>
+
+    <!-- Задание 3 -->
+    <div class="main-content">
+        <h3>Задание 3: Работа с массивами</h3>
+        <button class="btn btn-success" onclick="runTask3()">Запуск Задания 3</button>
+    </div>
+
+    <!-- Задание 4 -->
+    <div class="main-content">
+        <h3>Задание 4: Манипуляции с массивами</h3>
+        <button class="btn btn-warning" onclick="runTask4()">Запуск Задания 4</button>
+    </div>
+
+    <!-- Кнопка "Вверх" -->
+    <button class="scroll-to-top" onclick="scrollToTop()">↑</button>
+</div>
+
+<script src="primer_js.js"></script>
+
+</body>
+</html>

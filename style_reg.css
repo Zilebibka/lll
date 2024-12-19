@@ -1,0 +1,52 @@
+/* Включает ранее упомянутые стили для масштабируемости */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.main-content {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.scroll-to-top {
+    z-index: 1000;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+.scroll-to-top:hover {
+    background-color: #0056b3;
+}
+
+/* Мобильные стили */
+@media (max-width: 767px) {
+    .main-content {
+        margin-bottom: 15px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+
+    .scroll-to-top {
+        font-size: 20px;
+        padding: 8px;
+    }
+}

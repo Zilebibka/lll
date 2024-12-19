@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Первый Семестр</title>
+  <!-- Подключение CSS Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="button.js" defer></script>
+</head>
+
+<body>
+
+  <header class="bg-light py-3 text-center">
+    <img src="logo.jpg" alt="Logo" class="img-fluid" width="60">
+    <div class="group-info">
+      <p>Группа ЭФБО-08-23</p>
+      <p>Кан Артём Намович и Ярошинский Денис Викторович</p>
+    </div>
+  </header>
+
+  <!-- Адаптивное меню -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Наш крутецкий сайт</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+          <li class="nav-item"><a class="nav-link" href="1st_sem.html">Первый семестр</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Второй семестр</a></li>
+          <li class="nav-item"><a class="nav-link" href="uslugi.html">Услуги</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Авторизация</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Кнопка прокрутки вверх -->
+  <button class="scroll-to-top position-fixed bottom-0 end-0 mb-4 me-4 p-3 btn btn-primary" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">⬆️ Вверх</button>
+
+  <div class="container my-4">
+    <div class="row">
+      <aside class="col-md-4 mb-4">
+        <h3>Основная Информация о странице</h3>
+        <h4>Лекции</h4>
+        <p>Подробный список лекций.</p>
+        <h4>Практики</h4>
+        <p>Подробный список практик.</p>
+        <h4>Карта</h4>
+        <p>Карта для точного маршрута к ВУЗу.</p>
+        <h4>Видео</h4>
+        <p>Наши видео с ВУЗа.</p>
+        <h4>Файл</h4>
+        <p>Встроенный PDF файл.</p>
+      </aside>
+
+      <section class="col-md-8">
+        <h1>Первый семестр</h1>
+        <div class="row mb-4">
+          <div class="col-md-4 col-12"><img src="monkey.jpg" alt="Profile Picture" class="img-fluid"></div>
+          <div class="col-md-4 col-12"><img src="logo.jpg" alt="Profile Picture" class="img-fluid"></div>
+          <div class="col-md-4 col-12"><img src="garaz.jpg" alt="Profile Picture" class="img-fluid"></div>
+        </div>
+
+        <h2>Перечень лекций</h2>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">№</th>
+              <th scope="col">Тема</th>
+              <th scope="col">Отметка о посещении</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Введение в HTML</td><td>Присутствовал</td></tr>
+            <tr><td>2</td><td>Матиматейшн</td><td>Присутствовал</td></tr>
+            <tr><td>3</td><td>Русски</td><td>Присутствовал</td></tr>
+            <tr><td>4</td><td>Литвиноведенье</td><td>Присутствовал</td></tr>
+            <tr><td>5</td><td>Кондиционероведенье</td><td>Отсутствовал</td></tr>
+            <tr><td>6</td><td>Шалатууведенье</td><td>Присутствовал</td></tr>
+          </tbody>
+        </table>
+
+        <h2>Перечень практических занятий</h2>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">№</th>
+              <th scope="col">Тема</th>
+              <th scope="col">Отметка о посещении</th>
+              <th scope="col">Отметка о выполнении</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Перекурчик</td><td>Присутствовал</td><td>Выполнено</td></tr>
+            <tr><td>2</td><td>Зальчик</td><td>Присутствовал</td><td>Выполнено</td></tr>
+            <tr><td>3</td><td>Сипаведенье</td><td>Присутствовал</td><td>Выполнено</td></tr>
+            <tr><td>4</td><td>Раскумаривание</td><td>Присутствовал</td><td>Выполнено</td></tr>
+            <tr><td>5</td><td>Выпивание</td><td>Присутствовал</td><td>Выполнено</td></tr>
+            <tr><td>6</td><td>Сипанье</td><td>Присутствовал</td><td>Выполнено</td></tr>
+            <tr><td>7</td><td>Шахматы</td><td>Отсутствовал</td><td>Не выполнено</td></tr>
+            <tr><td>8</td><td>Математика</td><td>Отсутствовал</td><td>Не выполнено</td></tr>
+          </tbody>
+        </table>
+
+        <h2>Яндекс Карта</h2>
+        <iframe src="https://yandex.ru/map-widget/v1/-/CCUB4Og3" class="img-fluid" width="100%" height="400" frameborder="0"></iframe>
+
+        <h2>Наши Видео</h2>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <video controls width="100%">
+              <source src="path/to/video1.mp4" type="video/mp4">
+              Ваш браузер не поддерживает видео.
+            </video>
+          </div>
+          <div class="col-md-6 mb-4">
+            <video controls width="100%">
+              <source src="path/to/video2.mp4" type="video/mp4">
+              Ваш браузер не поддерживает видео.
+            </video>
+          </div>
+        </div>
+
+        <h2>Встроенный PDF документ</h2>
+        <object data="Текущий контроль Задание №5.pdf" type="application/pdf" width="100%" height="500">
+          <p>Ваш браузер не поддерживает отображение PDF. <a href="path/to/document.pdf">Скачайте PDF файл</a>.</p>
+        </object>
+      </section>
+    </div>
+  </div>
+
+  <footer class="bg-light py-3 text-center">
+    &copy; Ярошинский Денис Викторович и Кан Артём Намович, 2015
+  </footer>
+
+  <!-- Подключение JS Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
